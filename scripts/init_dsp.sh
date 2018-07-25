@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "Install nodejs"
+curl -sL https://deb.nodesource.com/setup_8.x | bash -
+apt-get install -y nodejs
 echo "Init DockerSecurityPlayground package";
 mkdir /home/vagrant/dsp
 # Set vagrant permissions

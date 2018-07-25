@@ -16,8 +16,6 @@
         - vim
         - build-essential
         - docker-compose
-        - nodejs
-        - npm
 
     - name:    Install Docker prerequisites
       apt:     name={{item}} update_cache=yes
@@ -39,10 +37,10 @@
       git: 
         repo: https://github.com/giper45/DockerSecurityPlayground.git
         dest: /home/vagrant/DockerSecurityPlayground
-    - name: add repository and install its signing key
-      shell: curl -sL https://deb.nodesource.com/setup_8.x | bash -
+    # - name: add repository and install its signing key
+    #   shell: curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
-    - name: Install nodejs
-      apt: name=nodejs update_cache=yes
+    # - name: Install nodejs
+    #   apt: name=nodejs update_cache=yes
 
 
