@@ -16,6 +16,8 @@
         - vim
         - build-essential
         - docker-compose
+        - nodejs
+        - npm
 
     - name:    Install Docker prerequisites
       apt:     name={{item}} update_cache=yes
@@ -43,5 +45,4 @@
     - name: Install nodejs
       apt: name=nodejs update_cache=yes
 
-    - name: Execute install
 
